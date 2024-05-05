@@ -9,6 +9,9 @@
     
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oldenburg' rel='stylesheet'>
     <script src="js/responsive-nav.js"></script>
   </head>
   <body>
@@ -41,10 +44,18 @@
     </div>
 
     <div class="finish">
-      <a href="business.html">
-        <button type="button" class="big_btn"> Finish!</button>
-      </a>
+        <button type="submit" class="big_btn" onclick= "return addItem(document.getElementById(list), inputText)"> FINISH!</button>
     </div>
+
+    <h3> Ongoing Events: </h3>
+    <div class="list"> 
+      <ul> 
+        <li>Mom and Daughter Brunch</li> 
+        <li>21 Savage Concert</li> 
+        <li>Claymation Class</li> 
+      </ul>
+    </div>
+
     <footer> B  L  O  O  M <span>&#169;</span></footer>
     
     <script src="js/fastclick.js"></script>
