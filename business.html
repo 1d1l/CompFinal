@@ -42,7 +42,7 @@
         </div>
           <div class="bemail">
             <label for="email">Email</label>
-            <input type="email" id="emailbox" name="emails" placeholder="email@ghoulmail.com" value="" required>
+            <input type="email" id="emailbox" name="emails" placeholder="email@gmail.com" value="" required>
           </div>
         <div class="baddy">
           <label for="baddy">Address</label>
@@ -52,67 +52,122 @@
           <label for="bdescrip"> Description</label>
           <input type="text" id="descip" name="description" placeholder="description" value="" required>
         </div>
+        <label class="aesthetictitle" for="baesthetic">Aesthetic</label>
         <div class="baesthetic">
-          <label for="baesthetic">Aesthetic</label>
-          <div class="options">
-            <select name="aesthetic" id="baesth" multiple>
-              <option value="goth">Gothic</option>
-              <option value="punk">Punk</option>
-              <option value="indie">Indie</option>
-              <option value="cozy">Cozy</option>
-              <option value="cute">Cute</option>
-              <option value="nature">Nature</option>
-              <option value="artsy">Artsy</option>
-              <option value="social">Social</option>
-              <option value="foodie">Foodie</option>
-              <option value="Y2K">Y2K</option>
-              <option value="sporty">Sporty</option>
+          <div>
+            <input type="checkbox" id="goth" name="g" value="Gothic">
+            <label for="Gothic"> Gothic</label>
+          </div>
+          <div>
+            <input type="checkbox" id="punk" name="p" value="punk">
+            <label for="punk"> Punk</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cozy" name="co" value="cozy">
+            <label for="cozy"> Cozy</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cute" name="c" value="cute">
+            <label for="cute"> Cute</label>
+          </div>
+          <div>
+            <input type="checkbox" id="nature" name="n" value="nature">
+            <label for="nature"> Nature</label>
+          </div>
+          <div>
+            <input type="checkbox" id="art" name="a" value="art">
+            <label for="art"> Artsy</label>
+          </div>
+          <div>
+            <input type="checkbox" id="food" name="f" value="food">
+            <label for="food"> Foodie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="social" name="s" value="social">
+            <label for="social"> Social</label>
+          </div>
             </select>
           </div>
-        </div>
-        <div class="bhours">
-          <label for="bhours">Hours You're Open</label>
+  
+        <label class="hourstitle" for="hours">Hours You're Open</label>
           <div class="hours">
-            <select id="bhour" name="hours" multiple>
-              <option value="8am">8am</option>
-              <option value="9am">9am</option>
-              <option value="10am">10am</option>
-              <option value="11am">11am</option>
-              <option value="12pm">12pm</option>
-              <option value="1pm">1pm</option>
-              <option value="2pm">2pm</option>
-              <option value="3pm">3pm</option>
-              <option value="4pm">4pm</option>
-              <option value="5pm">5pm</option>
-              <option value="6pm">6pm</option>
-              <option value="7pm">7pm</option>
-              <option value="8pm">8pm</option>
-              <option value="9pm">9pm</option>
-              <option value="10pm">10pm</option>
-              <option value="11pm">11pm</option>
-              <option value="12am">12am</option>
-              <option value="1am">1am</option>
-            </select>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 9am</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 10am</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 11am</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 12pm</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 1pm</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 2pm</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 3pm</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 4pm</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 5pm</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 6pm</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 7pm</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 8pm</label>
+              </div> <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 9pm</label>
+              </div> <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 11pm</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" name="t" value="time">
+                <label for="time"> 12am</label>
+              </div>
           </div>
-        </div>
         <div class="bcost">
-          <label for="bcost">General Price Range</label>
-          <select id="bprice" name="price">
-            <option value="Free">Free</option>
-            <option value="$5-$15">$5-$15</option>
-            <option value="$20-$40">$20-$40</option>
-            <option value="$50-$100">$50-$100</option>
-            <option value=">$100">>$100</option>
-          </select>
+            <label for="bcost">General Price Range</label>
+            <select id="bprice" name="price">
+              <option value="Free">Free</option>
+              <option value="$5-$15">$5-$15</option>
+              <option value="$20-$40">$20-$40</option>
+              <option value="$50-$100">$50-$100</option>
+              <option value=">$100">>$100</option>
+            </select>
         </div>
-        <div class="buttondiv">
-          <a href="events.html">
-            <button type="button" class="bbutton1">
-              Finish
-            </button>
-          </a>
-       </div>
-
+          <div class="buttondiv">
+            <a href="events.html">
+              <button type="button" class="bbutton1">
+                Finish
+              </button>
+            </a>
+        </div>
+      </div>
       </form>
     </div>
     <footer> 
