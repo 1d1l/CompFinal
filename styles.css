@@ -4,14 +4,13 @@ body {
   padding: 0;
   border: 0;
   max-height: fit-content;
-  background-image: url(townofchapelhill.jpg);
 }
 
 body {
   background-image: url(townofchapelhill.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 
 
 }
