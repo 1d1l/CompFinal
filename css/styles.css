@@ -63,6 +63,21 @@ h3 {
   width: 100%;
 }
 
+.list ul {
+  display: flex;
+  font-size: 20px;
+  list-style: none;
+  color: #798171;
+  flex-direction: column;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin: 1%;
+}
+
+.list li {
+  padding: 5%
+}
+
 a:active,
 a:hover {
   outline: 1;
