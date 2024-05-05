@@ -7,10 +7,10 @@ body {
 }
 
 body {
-  background-image: url('/background.jpg');
+  background-image: url('/green.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
 
 }
 .oldenburg-regular {
@@ -100,7 +100,8 @@ h3 {
 }
 
 a:active,
-a:hover {
+a:hover,
+a:focus {
   outline: 1;
   text-decoration: none;
 }
@@ -167,7 +168,8 @@ a:hover {
 .nav-collapse.opened {
   max-height: 9999px;
 }
-.menu-item:hover {
+.menu-item:hover,
+.menu-item:focus {
   padding: .25px;
   border-radius: 5px;
   background-color: #798171;
@@ -213,7 +215,8 @@ header {
   font-family: 'oldenburg';
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #F8F9F7;
 }
 
@@ -224,6 +227,9 @@ a:hover {
 .newevent {
   text-align: center;
   margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -241,7 +247,7 @@ button {
   width: 200px;
   height: 50px;
   display: flex;
-  background-color: #f7dad9;
+  background-color: #F8F9F7;
   justify-content: center;
   align-items: center;
   transition: background-color 1s;
@@ -249,13 +255,14 @@ button {
   border-radius: 5px;
   text-decoration: none;
   border: 2px solid #978fee;
-  color: #798171;
+  color: black;
   font-weight: bold;
   font-family: "Oldenburg";
   margin: 10px;
 }
 
-button:hover {
+button:hover,
+Button:focus {
   background-color: #999ac6;
   border: #f7dad9;
   text-decoration: none;
@@ -284,41 +291,13 @@ footer {
   height: 80px;
   position: sticky;
   content: "\00a9";
-  color: #978fee;
+  color: #F8F9F7;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-size: 25px;
   font-family: "Oldenburg";
 }
 
-@media screen and (min-width: 768px) {
-  .nav-collapse ul {
-  flex-direction: row;
-  align-items: flex-end;
-} 
-  
-  .nav-collapse li {
-    width: auto;
-  }
-
-  .nav-collapse a {
-    padding: 1.02em 2em;
-    text-align: center;
-    border-top: 0;
-    margin: 0;
-  }
-
-  .nav-collapse ul ul a {
-    display: none;
-  }
-
-  .nav-collapse.closed {
-    max-height: none;
-  }
-  .nav-toggle {
-    display: none;
-  }
-}
 
 
 .bodystuff{
@@ -337,7 +316,7 @@ footer {
 }
 .at1{
   text-align: center;
-  background-color: #f8f9f7b3;
+  background-color: #f8f9f7;
   border-radius: 5px;
   padding: 10px;
   width: 70%;
@@ -354,7 +333,6 @@ footer {
 }
 .abt2 {
   font-weight: bold;
-  color: #978fee;
 }
 .abt3{
   margin: 20px;
@@ -375,23 +353,23 @@ form{
   text-align: center;
   padding: 10px;
   border-radius: 5px;
-  background-color: #f8f9f7b3 ;
+  background-color: #798171ce ;
 
   font-weight: bold;
-  color:#798171;
+  color: black;
   width: 80%;
   font-family: 'Oldenburg';
 }
 input{
   width: 100%;
   height: 25px;
-  color: #978fee;
-  border: 2px solid #978fee;
+  color: black;
+  border:none;
   padding-left: 5px;
   margin: 2px;
   border-radius: 5px;
   font-family: 'Ovo';
-  font-size: medium;
+  font-size: large;
 }
 input:focus{
   outline: #978fee;
@@ -405,8 +383,8 @@ select:focus {
 
 select{
   width: 100%;
-  color: #978fee;
-  border: 2px solid #978fee;
+  color: black;
+  border: none;
   padding-left: 5px;
   margin: 2px;
   border-radius: 5px;
@@ -454,10 +432,10 @@ label{
   justify-content: flex-start;
   justify-content: space-evenly;
   width: 100%;
-  color: #978fee;
+  color: black;
 }
 .aesthetictitle{
-  color: #798171;
+  color: black;
   margin-left: 18px;
 }
 .nday{
@@ -474,7 +452,7 @@ label{
     justify-content: flex-start;
     justify-content: space-evenly;
     width: 100%;
-    color: #978fee;
+    color: black;
     padding-bottom: 20px;
   }
 .hourstitle{
@@ -544,4 +522,33 @@ button.big_btn{
 }
 .yay{
   background-image: url(https://giphy.com/embed/FPDZV2JGkNGeUZdi7G);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-collapse ul {
+  flex-direction: row;
+  align-items: flex-end;
+} 
+  
+  .nav-collapse li {
+    width: auto;
+  }
+
+  .nav-collapse a {
+    padding: 1.02em 2em;
+    text-align: center;
+    border-top: 0;
+    margin: 0;
+  }
+
+  .nav-collapse ul ul a {
+    display: none;
+  }
+
+  .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
 }
