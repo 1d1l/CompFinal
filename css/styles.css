@@ -3,18 +3,66 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  height: 100%;
+  max-height: fit-content;
 }
 
 body {
-  background-image: url('background.jpg');
+  background-image: url('/background.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h1 {
+  color: #798171;
+  display: flex;
+  justify-content: center;
+  text-decoration: dashed;
+  margin: 5%;
+  font-size: 80pt;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.ch {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-height: 50%;
+  border-radius: 5px;
+  margin: 5%;
+}
+
+h2 {
+  color: #798171;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  color: #798171;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.new {
+  color: #798171;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 25px;
+  width: 100%;
 }
 
 a:active,
 a:hover {
-  outline: 0;
+  outline: 1;
 }
 
 @font-face {
@@ -49,7 +97,7 @@ a:hover {
   width: 100%;
   left: 0;
   top: 0;
-}
+} 
 
 .nav-toggle.active:before {
   font-size: 24px;
@@ -123,11 +171,78 @@ header {
   padding-left: 2em;
 }
 
+.newevent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  margin: 10%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid #798171;
+  border-radius: 5px;
+}
+
+
+form {
+  display: flex;
+  margin: 1%;
+  flex-direction: column;
+}
+
+
+.big_btn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  background-color: #f7dad9;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s;
+  border: #999ac6;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.big_btn:hover {
+  background-color: #999ac6;
+  border: #f7dad9;
+  text-decoration: none;
+}
+
+.learn {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+
+.finish {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+  align-items: center;
+  background-color: #798171;
+  height: 80px;
+  position: sticky;
+  content: "\00a9";
+  color: #798171;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-size: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .nav-collapse ul {
   flex-direction: row;
   align-items: flex-end;
-}
+} 
   
   .nav-collapse li {
     width: auto;
@@ -150,4 +265,5 @@ header {
   .nav-toggle {
     display: none;
   }
+
 }
