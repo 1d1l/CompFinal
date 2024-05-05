@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background-image: url('townofchapelhill.jpg');
+  background-image: linear-gradient(#F8F9F7 #798171);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
