@@ -12,19 +12,21 @@
     <script src="js/responsive-nav.js"></script>
   </head>
   <body>
-    <div class='hamburger'>
+    <header class='hamburger'>
       <nav class="nav-collapse">      
          <ul>
-          <li class="menu-item"><a href="" data-scroll>home</a></li>
-          <li class="menu-item"><a href="" data-scroll>about</a></li>
-          <li class="menu-item"><a href="" data-scroll>contact</a></li>
+          <li class="menu-item"><a href="index.html" data-scroll>home</a></li>
+          <li class="menu-item"><a href="about.html" data-scroll>learn more</a></li>
+          <li class="menu-item"><a href="business.html" data-scroll>sign up</a></li>
      
         </ul>
       </nav>
+    </header>
+    <div class="h1">
+      <h1 class="bh">
+        Business
+      </h1>
     </div>
-    <h1 class="bh">
-      Business
-    </h1>
     <div class="bform">
       <form action="#" method="post">
         <div class="bname">
@@ -32,11 +34,11 @@
             <label for="name">Name</label>
             <input type="text" id="namebox" name="names" placeholder="your name" value="" required>
           </div>
+        </div>
           <div class="bemail">
             <label for="email">Email</label>
             <input type="email" id="emailbox" name="emails" placeholder="email@ghoulmail.com" value="" required>
           </div>
-        </div>
         <div class="baddy">
           <label for="baddy">Address</label>
           <input type="text" id="addybox" name="addys" placeholder="your address" value="" required>
@@ -48,7 +50,7 @@
         <div class="baesthetic">
           <label for="baesthetic">Aesthetic</label>
           <div class="options">
-            <select name="aesthetic" id="baesth"></select>
+            <select name="aesthetic" id="baesth" multiple>
               <option value="goth">Gothic</option>
               <option value="punk">Punk</option>
               <option value="indie">Indie</option>
@@ -60,12 +62,13 @@
               <option value="foodie">Foodie</option>
               <option value="Y2K">Y2K</option>
               <option value="sporty">Sporty</option>
+            </select>
           </div>
         </div>
         <div class="bhours">
           <label for="bhours">Hours You're Open</label>
           <div class="hours">
-            <select id="bhour" name="hours">
+            <select id="bhour" name="hours" multiple>
               <option value="8am">8am</option>
               <option value="9am">9am</option>
               <option value="10am">10am</option>
