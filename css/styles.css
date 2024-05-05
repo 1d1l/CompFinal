@@ -11,9 +11,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
 }
 
 h1 {
@@ -45,6 +43,7 @@ h2 {
   text-align: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  font-family: 'oldenburg';
 }
 
 h3 {
@@ -53,6 +52,7 @@ h3 {
   color: #798171;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  font-family: 'ovo';
 }
 
 .new {
@@ -90,12 +90,13 @@ a:hover {
 }
 
 .nav-toggle:before {
-  color: black; /* edit this to change the icon color */
-  font: normal 28px/55px "responsivenav"; /* edit font-size (28px) to change the icon size */
+  color: #978fee; 
+  font: normal 28px/55px "responsivenav"; 
+  font-weight: bold;
   text-transform: none;
   text-align: center;
   position: absolute;
-  content: "\2261"; /* hamburger icon */
+  content: "\2261"; 
   text-indent: 0;
   width: 100%;
   left: 0;
@@ -104,7 +105,7 @@ a:hover {
 
 .nav-toggle.active:before {
   font-size: 24px;
-  content: "\78"; /* X/close icon */
+  content: "\78"; 
 }
 
 .nav-collapse ul {
@@ -130,7 +131,9 @@ a:hover {
 .nav-collapse.opened {
   max-height: 9999px;
 }
-
+.menu-item:hover {
+  text-decoration: underline dotted #978fee;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -287,10 +290,7 @@ footer {
   width: 500px;
 }
 
-.h1{
-  display: flex;
-  justify-content: center;
-}
+
 .bform{
   text-align: center;
   padding: 10px;
@@ -300,6 +300,7 @@ footer {
   color:rgb(211, 203, 254);
   flex-direction: row;
   justify-content: center;
+  width: 80%;
 }
 input{
   width: 100%;
