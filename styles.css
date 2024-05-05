@@ -4,11 +4,10 @@ body {
   padding: 0;
   border: 0;
   max-height: fit-content;
-  background-image: url(green.jpg);
 }
 
 body {
-  background-image: url('/green.jpg');
+  background-image: url('green.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
