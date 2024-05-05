@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background-image: url(townofchapelhill.jpg);
+  background-image: url('townofchapelhill.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
